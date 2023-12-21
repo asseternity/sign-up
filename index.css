@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.image {
+    max-width:30vw;
+    position: relative;
+}
+
+.image #bg {
+    float:left;
+    height:100vh;
+    width:100%;
+    object-fit: cover;
+    margin-right: 10px;
+    opacity: 0.75;
+}
+
+.image #logo {
+    position: absolute;
+    top:160px;
+    left:10%;
+    width:80%;
+}
+
+.heading {
+    margin-top: 0;
+    padding-top: 100px;
+    padding-left: 30px;
+}
+
+.heading2 {
+    margin-top: 0;
+    padding-top: 50px;
+    padding-left: 30px;
+    color: darkslategrey;
+}
+
+.heading p {
+    font-family: verdana;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.heading2 p {
+    font-family: verdana;
+    font-size: 130%;
+}
+
+.forms {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    margin-bottom: 60px;
+    font-family: verdana;
+    margin-right: 10px;
+}
+
+.forms form {
+    padding-bottom: 10px;
+    padding-left: 0;
+}
+
+.forms label {
+    padding-left: 5px;
+}
+
+.form1, .form2, .form3, .form4, .form5, .form6 {
+    grid-column: 1;
+}
+
+.forms input[type=text] {
+    border:1px solid white;
+    border-radius: 5px;
+    padding:4px;
+    font-size: 120%;
+    display: block;
+}
+
+.forms input[type=text]:focus {
+    border:1px solid midnightblue;
+}
+
+@media screen and (min-width:900px) {
+    .forms {
+        grid-template-columns: 2;
+        grid-template-rows: 3;
+        max-width: 60%;
+    }
+
+    .form1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .form2 {
+        grid-column: 2;
+        grid-row: 1;      
+    }
+
+    .form3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .form4 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .form5 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .form6 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+}
+
+.button_section {
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.button_create {
+    background-color: forestgreen;
+    color: white;
+    padding:10px 50px;
+    font-family: verdana;
+    font-size: 130%;
+    border-radius: 10px;
+}
+
+.login {
+    padding-left: 30px;
+    font-family: verdana;
+}
+
+.login a {
+    font-weight: bold;
+    text-decoration: none;
+    color: forestgreen;
+}
+
+@media screen and (max-width:900px) {
+    .heading {
+        padding-top: 5px;
+    }
+    .heading2 {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .forms {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .button_section {
+        margin-bottom: 10px;
+    }
+}
