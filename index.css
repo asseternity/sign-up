@@ -8,16 +8,28 @@ p {
     padding-top: 0;
 }
 
-.image {
-    max-width:30vw;
-    position: relative;
+.content {
+    display: flex;
+    min-height:100vh;
 }
 
-.image #bg {
+.right_side {
+    padding-right: 10px;
+}
+
+.image {
+    position: relative;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: orangered;
+    background-repeat: repeat;
+    width:40%;
+    min-width: 120px;
+    padding: 0;
+    margin: 0;
+    border:none;
     float:left;
-    height:100vh;
-    width:100%;
-    object-fit: cover;
     margin-right: 10px;
     opacity: 0.75;
 }
@@ -60,15 +72,11 @@ p {
     margin-bottom: 60px;
     font-family: verdana;
     margin-right: 10px;
+    margin-left: 30px;
 }
 
 .forms form {
-    padding-bottom: 10px;
-    padding-left: 0;
-}
-
-.forms label {
-    padding-left: 5px;
+    padding-bottom: 20px;
 }
 
 .form1, .form2, .form3, .form4, .form5, .form6 {
@@ -152,10 +160,10 @@ p {
 
 @media screen and (max-width:900px) {
     .heading {
-        padding-top: 5px;
+        padding-top: 30px;
     }
     .heading2 {
-        padding-top: 0px;
+        padding-top: 10px;
         margin-top: 0px;
     }
     .forms {
