@@ -84,7 +84,7 @@ p {
 }
 
 .forms input[type=text] {
-    border:1px solid white;
+    border:1px solid #cccccc;
     border-radius: 5px;
     padding:4px;
     font-size: 120%;
@@ -92,7 +92,7 @@ p {
 }
 
 .forms input[type=text]:focus {
-    border:1px solid midnightblue;
+    border:1px solid #444444;
 }
 
 @media screen and (min-width:900px) {
@@ -134,6 +134,7 @@ p {
 }
 
 .button_section {
+    margin-top: 10px;
     padding-left: 30px;
     margin-bottom: 30px;
 }
@@ -145,6 +146,10 @@ p {
     font-family: verdana;
     font-size: 130%;
     border-radius: 10px;
+}
+
+.button_create:hover {
+    background-color: darkgreen;
 }
 
 .login {
@@ -173,4 +178,19 @@ p {
     .button_section {
         margin-bottom: 10px;
     }
+}
+
+.error {
+    font-size: 70%;
+    height: 30px;
+    width: 230px;
+    display: block;
+}
+
+.forms input[type=text].invalid {
+    background-color: lightcoral;
+}
+
+.forms input[type=text].valid {
+    border: 2px solid forestgreen;
 }

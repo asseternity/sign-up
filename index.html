@@ -27,36 +27,41 @@
             <p>Let's do this!</p>
         </div>
 
-        <div class="forms">
-            <form action="" class="form1">
-                <label for="first_name">First name</label>
-                <input type="text" id="first_name" />
-            </form>
-            <form action="" class="form2">
-                <label for="last_name">Last name</label>
-                <input type="text" id="last_name" />
-            </form>
-            <form action="" class="form3">
+        <form novalidate class="forms">
+            <div class="form1">
+                <label for="username">Username</label>
+                <input type="text" id="username" />
+                <span id="username_error" class="error"></span>
+            </div>
+            <div class="form2">
+                <label for="country">Country</label>
+                <input type="text" id="country" />
+                <span id="country_error" class="error"></span>
+            </div>
+            <div class="form3">
                 <label for="email">Email</label>
                 <input type="text" id="email" />
-            </form>
-            <form action="" class="form4">
-                <label for="phone_number">Phone number</label>
-                <input type="text" id="phone_number" />
-            </form>
-            <form action="" class="form5">
+                <span id="email_error" class="error"></span>
+            </div>
+            <div class="form4">
+                <label for="zip_code">Zip Code</label>
+                <input type="text" id="zip_code" />
+                <span id="zip_code_error" class="error"></span>
+            </div>
+            <div class="form5">
                 <label for="password">Password</label>
                 <input type="text" id="password" />
-            </form>
-            <form action="" class="form6">
+                <span id="password_error" class="error"></span>
+            </div>
+            <div class="form6">
                 <label for="confirm_password">Confirm password</label>
                 <input type="text" id="confirm_password" />
-            </form>
-        </div>
-
-        <div class="button_section">
-            <button onclick="" class="button_create">Create account</button>
-        </div>
+                <span id="confirm_password_error" class="error"></span>
+            </div>
+            <div class="button_section">
+                <input type="submit" value="Create account" class="button_create" id="submit">
+            </div>
+        </form>
 
         <div class="login">
             <p>Already have an account? <a href="#">Log in.</a></p>
